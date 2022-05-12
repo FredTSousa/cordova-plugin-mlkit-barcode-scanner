@@ -262,7 +262,7 @@ public class CaptureActivity extends AppCompatActivity implements SurfaceHolder.
     Boolean rotateCamera = getIntent().getBooleanExtra("RotateCamera", false);
     if (rotateCamera) {
       mCameraView.setScaleX(-1F);
-      mCameraView.setScaleY(-1F);
+      mCameraView.setScaleY(1F);
     } else {
       mCameraView.setScaleX(1F);
       mCameraView.setScaleY(1F);
